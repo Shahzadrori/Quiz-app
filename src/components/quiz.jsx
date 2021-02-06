@@ -13,10 +13,10 @@ const Quiz = () => {
      })
  }, [])
 
-  return (
-    <>
-    <Sawal info={question}/>
-    </>
-  );
+  return question.length > 0 ? (
+      <Sawal data={question[0]}/>
+  ):(
+      <h2>Loading ...</h2>
+  )
 };
 export default Quiz;
