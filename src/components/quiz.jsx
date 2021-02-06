@@ -12,9 +12,11 @@ const Quiz = () => {
          setquestion(data.results);
      })
  }, [])
-
+ const handleanswer = (answer)=>{
+     //checkanswer
+ }
   return question.length > 0 ? (
-      <Sawal data={question[0]}/>
+      <Sawal data={question[0]} handleanswer={handleanswer}/>
   ):(
       <h2>Loading ...</h2>
   )
