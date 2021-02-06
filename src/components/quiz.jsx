@@ -22,7 +22,7 @@ const Quiz = () => {
       {currentques && (<Sawal data={currentques} handleanswer={handleanswer}/>)}
       </div>
   ):(
-      <h2>Loading ...</h2>
+      <h2>Loading .......................</h2>
   )
 };
 export default Quiz;
